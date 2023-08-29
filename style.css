@@ -31,7 +31,7 @@ z-index: 1000;
 display: flex;
 align-items: center;
 justify-content: center;
-background: transparent;
+background:transparent;
 padding: 22px 15px;
 border-bottom: 1px solid transparent;
 transition: all .45s ease;
@@ -41,6 +41,7 @@ transition: all .45s ease;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-right: 150px;
 }
 span{
     color:var(--main-color);
@@ -74,7 +75,7 @@ section{
 }
 .home{
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     width:100%;
     background-image: url("images/home.jpg");
     background-size: cover;
@@ -149,30 +150,33 @@ margin-bottom: 40px;
     gap: 1.5rem;
 }
 .about-img img{
-    max-width: 530px;
+    margin-left: 90px;
+    max-width: 400px;
     height: auto;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 10px solid var(--bg-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
-.abput-text h2{
+.about-text h2{
     font-size: var(--h2-font);
     line-height: 1;
 }
 .about-text h4{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: var(--text-color);
-    line-height: 1.7;
-    margin: 15px 0 30px;
+    line-height: 1.5;
+    margin: 25px 0 20px;
 }
 .about-text p{
     color: var(--second-color);
     font-size: var(--p-font);
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.8;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
-.services{
+.skills{
     background: var(--second-bg-colar);
 
 }
@@ -188,7 +192,7 @@ margin-bottom: 15px;
     font-size: var(--h2-font);
     line-height: 1;
 }
-.services-content{
+.skills-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
@@ -213,7 +217,7 @@ margin-bottom: 20px;
 }
 .box p{
     color: var(--second-color);
-    font-size: 1rem;
+    font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 25px;
 
@@ -222,7 +226,7 @@ margin-bottom: 20px;
     transform: translatey(-8px);
     cursor: pointer;
 }
-.portfolio-content{
+.projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
@@ -413,15 +417,15 @@ cursor:pointer;
     :root{
         --big-font:4rem;
         --h2-font:2.5rem;
-        --p-font:1rem;
+        --p-font:0.5rem;
         transition: .1s;
     }
     .home-text h3{
         font-size:2.5rem;
     }
-    .home{
+    /* .home{
         height:87vh;
-    }
+    } */
 }
 @media (max-width:920){
     .about{
